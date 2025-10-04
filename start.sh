@@ -12,6 +12,10 @@ fi
 # Aller dans le répertoire backend
 cd backend
 
+# Installer les dépendances Python
+echo "📦 Installation des dépendances..."
+pip install -r requirements.txt
+
 # Créer le dossier audio_files s'il n'existe pas
 mkdir -p audio_files
 
