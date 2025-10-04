@@ -14,7 +14,7 @@ cd backend
 
 # Installer les dépendances Python
 echo "📦 Installation des dépendances..."
-pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 
 # Créer le dossier audio_files s'il n'existe pas
 mkdir -p audio_files
@@ -25,4 +25,4 @@ echo "🌐 Host: 0.0.0.0"
 echo "🔧 Mode: Production"
 
 # Démarrer l'application avec uvicorn
-uvicorn api.main:app --host 0.0.0.0 --port $PORT --workers 1
+python3 -m uvicorn api.main:app --host 0.0.0.0 --port $PORT --workers 1
