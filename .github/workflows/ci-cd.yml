@@ -60,7 +60,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           port: 22
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: './backend/docker-compose.prod.yml,./backend/nginx.prod.conf,./deploy.sh,.env.example'
+          source: 'backend/docker-compose.prod.yml,backend/deploy.sh,.env.example'
           target: /home/${{ secrets.SSH_USER }}/agrigen-backend/
           strip_components: 1
 
