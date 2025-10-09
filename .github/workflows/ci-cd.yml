@@ -33,7 +33,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./backend
-          file: ./backend/Dockerfile
+          file: Dockerfile
           push: true
           tags: mansour-gueye/agrigen-backend:latest
           cache-from: type=gha
