@@ -1,0 +1,14 @@
+name: CI/CD Pipeline AgriGenAI Backend
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'backend/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'backend/**'
+  workflow_dispatch:  # ← Ajoutez cette ligne
